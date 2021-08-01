@@ -24,7 +24,7 @@ planet_data = []
 for index,datarow in enumerate(planet_data_1):
     planet_data.append(planet_data_1[index]+planet_data_2[index])
 
-with open ("final_data.csv","a+") as f:
+with open ("total_stars.csv","a+") as f:
     csv_writer = csv.writer(f)
     csv_writer.writerow(headers)
     csv_writer.writerows(planet_data)
